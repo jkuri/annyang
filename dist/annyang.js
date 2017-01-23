@@ -37,6 +37,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   var annyang;
 
+  if (!root) {
+    return false;
+  }
+
   // Get the SpeechRecognition object, while handling browser prefixes
   var SpeechRecognition = root.SpeechRecognition || root.webkitSpeechRecognition || root.mozSpeechRecognition || root.msSpeechRecognition || root.oSpeechRecognition;
 

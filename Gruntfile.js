@@ -135,7 +135,7 @@ module.exports = function(grunt) {
   });
 
   // Register tasks
-  grunt.registerTask('default', ['jshint', 'babel', 'uglify', 'cssmin', 'jasmine', 'markdox']);
+  grunt.registerTask('default', ['jshint', 'babel', 'uglify']);
   grunt.registerTask('dev', ['default', 'connect', 'watch']);
   grunt.registerTask('test', ['jshint', 'babel', 'jasmine']);
 

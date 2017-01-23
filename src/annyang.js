@@ -29,6 +29,10 @@
 
   var annyang;
 
+  if (!root) {
+    return false;
+  }
+
   // Get the SpeechRecognition object, while handling browser prefixes
   var SpeechRecognition = root.SpeechRecognition ||
                           root.webkitSpeechRecognition ||
